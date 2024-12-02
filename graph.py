@@ -23,8 +23,8 @@ class Graph:
         :param node2_id: ID of the second node.
         """
         if node1_id in self.nodes and node2_id in self.nodes:
-            self.nodes[node1_id].add_connection(node2_id)
-            self.nodes[node2_id].add_connection(node1_id)
+            self.nodes[node1_id].connections.add(node2_id)
+            self.nodes[node2_id].connections.add(node1_id)
 
     def find_node(self, node_id):
         """
@@ -33,6 +33,3 @@ class Graph:
         :return: Node object or None if not found.
         """
         return self.nodes.get(node_id)
-
-    def __repr__(self):
-        return f"Graph({len(self.nodes)} nodes)"
