@@ -3,7 +3,8 @@ import sys
 import os
 
 # Add the project root directory to Python's path
-sys.path.append(r"C:\Users\kevin\Desktop\Github\Strings-and-Encryption")
+#sys.path.append(r"C:\Users\kevin\Desktop\Github\Strings-and-Encryption")
+sys.path.append(r"C:\Users\harry\Documents\GitHub\Strings-and-Encryption")
 
 from graph import Graph
 from message import Message
