@@ -1,7 +1,7 @@
 # Strings-and-Encryption
 ## Strings and Encryption Project
 '''Overview
-This project is focused on implementing secure communication algorithms and data structures. The main components include a graph-based messaging system and encryption/compression functionalities, such as RSA encryption and Run-Length Encoding (RLE).
+This project is focused on implementing secure communication algorithms and data structures. The main components include a graph-based messaging system and encryption/compression functionalities, such as RSA encryption and Run-Length Encoding.
 
 Features
 
