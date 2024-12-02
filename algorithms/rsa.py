@@ -20,6 +20,11 @@ def encrypt_message(public_key, message):
     :param message: Message to encrypt (string).
     :return: Encrypted message (bytes).
     """
+    if message is None:
+        raise ValueError("Cannot encrypt a NoneType message!")
+    
+    print(f"Encrypting Message: {message}")  # Debug statement
+    
     encrypted = public_key.encrypt(
         message.encode(),  # Convert message to bytes
         padding.OAEP(
@@ -29,6 +34,7 @@ def encrypt_message(public_key, message):
         ),
     )
     return encrypted
+
 
 def decrypt_message(private_key, encrypted_message):
     """
