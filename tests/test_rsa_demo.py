@@ -2,7 +2,8 @@ import sys
 import os
 
 # Add the project root directory to the Python path
-sys.path.append(r"C:\Users\kevin\Desktop\Github\Strings-and-Encryption")
+# sys.path.append(r"C:\Users\kevin\Desktop\Github\Strings-and-Encryption")
+sys.path.append(r"C:\Users\harry\Documents\GitHub\Strings-and-Encryption")
 
 # Now import from the algorithms package
 from algorithms.rsa import generate_keys, encrypt_message, decrypt_message, serialize_keys, deserialize_keys
